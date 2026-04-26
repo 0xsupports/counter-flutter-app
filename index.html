@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Counter App</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple: #6750A4;
+      --purple-light: #EADDFF;
+      --surface: #FFFBFE;
+      --on-surface: #1C1B1F;
+      --outline: #CAC4D0;
+      --secondary: #625B71;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--surface);
+      color: var(--on-surface);
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--purple);
+      padding: 48px 24px 40px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 36px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-size: 15px;
+      opacity: 0.82;
+    }
+
+    /* ── Content ── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* Zero-data banner */
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--purple-light);
+      border-left: 4px solid var(--purple);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 40px;
+    }
+
+    .badge-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+
+    .badge-text strong {
+      display: block;
+      font-size: 15px;
+      color: var(--purple);
+      font-weight: 700;
+    }
+
+    .badge-text span {
+      font-size: 14px;
+      color: var(--secondary);
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 36px;
+    }
+
+    section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--purple);
+      border-bottom: 2px solid var(--purple-light);
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+
+    section p {
+      font-size: 15px;
+      color: #3B3944;
+      margin-bottom: 10px;
+    }
+
+    /* Checklist */
+    ul.check {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.check li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: #3B3944;
+      padding: 5px 0;
+    }
+
+    ul.check li::before {
+      content: "✓";
+      color: var(--purple);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Data table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    th {
+      background: var(--purple-light);
+      color: var(--purple);
+      font-weight: 700;
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--outline);
+      color: #3B3944;
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .tag.local  { background: #E8F5E9; color: #2E7D32; }
+    .tag.never  { background: #FCE4EC; color: #C62828; }
+
+    /* Effective date */
+    .meta {
+      font-size: 13px;
+      color: var(--secondary);
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--outline);
+    }
+
+    a { color: var(--purple); }
+
+    @media (max-width: 480px) {
+      header { padding: 36px 16px 28px; }
+      main   { padding: 28px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-icon">🔢</div>
+  <h1>Counter — Privacy Policy</h1>
+  <p>Package: com.countify.app</p>
+</header>
+
+<main>
+
+  <!-- Zero-data banner -->
+  <div class="badge">
+    <span class="badge-icon">🔒</span>
+    <div class="badge-text">
+      <strong>This app collects no personal data whatsoever.</strong>
+      <span>Everything stays on your device. Nothing is transmitted, shared, or sold.</span>
+    </div>
+  </div>
+
+  <!-- 1. Overview -->
+  <section>
+    <h2>1. Overview</h2>
+    <p>
+      Counter ("the App") is a tally counter application developed for Android.
+      This Privacy Policy explains what information (if any) the App handles,
+      how it is stored, and your rights regarding that information.
+    </p>
+    <p>
+      By installing or using the App, you agree to this Privacy Policy.
+      If you do not agree, please uninstall the App.
+    </p>
+  </section>
+
+  <!-- 2. Data we collect -->
+  <section>
+    <h2>2. Information Collected</h2>
+    <p>The App stores the following data <strong>locally on your device only</strong>:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Storage</th>
+          <th>Shared?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Counter names &amp; values</td>
+          <td>Restore your counters between sessions</td>
+          <td><span class="tag local">Device only</span></td>
+          <td><span class="tag never">Never</span></td>
+        </tr>
+        <tr>
+          <td>Counter history (action log)</td>
+          <td>Display history screen</td>
+          <td><span class="tag local">Device only</span></td>
+          <td><span class="tag never">Never</span></td>
+        </tr>
+        <tr>
+          <td>App settings (theme, font, button style)</td>
+          <td>Remember your preferences</td>
+          <td><span class="tag local">Device only</span></td>
+          <td><span class="tag never">Never</span></td>
+        </tr>
+        <tr>
+          <td>Background color selection</td>
+          <td>Restore your chosen background</td>
+          <td><span class="tag local">Device only</span></td>
+          <td><span class="tag never">Never</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:14px;">
+      All data is stored using Android's <code>SharedPreferences</code> — a
+      standard on-device key-value store. No database, no cloud sync, no server.
+    </p>
+  </section>
+
+  <!-- 3. What we do NOT collect -->
+  <section>
+    <h2>3. What We Do NOT Collect</h2>
+    <ul class="check">
+      <li>Name, email address, phone number, or any contact information</li>
+      <li>Device identifiers (IMEI, Advertising ID, Android ID)</li>
+      <li>Location data (GPS or network-based)</li>
+      <li>Camera, microphone, or media access</li>
+      <li>Usage analytics or crash reports</li>
+      <li>IP address or any network metadata</li>
+      <li>Contacts, calendar, or files on your device</li>
+      <li>Payment or financial information</li>
+    </ul>
+  </section>
+
+  <!-- 4. Internet & Permissions -->
+  <section>
+    <h2>4. Internet Access &amp; Permissions</h2>
+    <p>
+      The App does <strong>not</strong> request the
+      <code>INTERNET</code> permission. It cannot make network requests
+      of any kind. The App functions entirely offline.
+    </p>
+    <p>The App requests <strong>zero</strong> Android runtime permissions.
+      No dialogs asking for access to your camera, storage, location,
+      microphone, or contacts will ever appear.</p>
+  </section>
+
+  <!-- 5. Third-party SDKs -->
+  <section>
+    <h2>5. Third-Party Libraries</h2>
+    <p>The App uses the following open-source libraries. None of them collect user data:</p>
+    <ul class="check">
+      <li><strong>Provider</strong> — state management (MIT License)</li>
+      <li><strong>shared_preferences</strong> — local storage (BSD License)</li>
+      <li><strong>google_fonts</strong> — typography, fonts bundled as assets in release builds — no network calls (Apache 2.0)</li>
+      <li><strong>audioplayers</strong> — local sound playback only (MIT License)</li>
+    </ul>
+    <p>No advertising SDKs, analytics SDKs, or crash-reporting tools are included.</p>
+  </section>
+
+  <!-- 6. Data retention -->
+  <section>
+    <h2>6. Data Retention &amp; Deletion</h2>
+    <p>
+      All data is stored only on your device and only for as long as the App is
+      installed. You can delete all data at any time by:
+    </p>
+    <ul class="check">
+      <li>Using "Clear History" inside the App (Settings screen)</li>
+      <li>Uninstalling the App — this permanently removes all stored data</li>
+      <li>Clearing app data via Android Settings → Apps → Counter → Storage → Clear Data</li>
+    </ul>
+  </section>
+
+  <!-- 7. Children -->
+  <section>
+    <h2>7. Children's Privacy</h2>
+    <p>
+      The App does not knowingly collect any personal information from anyone,
+      including children under the age of 13. Because no data is collected at all,
+      the App is safe for all age groups.
+    </p>
+  </section>
+
+  <!-- 8. Changes -->
+  <section>
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      If the App is updated in a way that changes how data is handled, this
+      Privacy Policy will be updated and the "Last Updated" date below will
+      be revised. Continued use of the App after changes constitutes acceptance
+      of the revised policy.
+    </p>
+  </section>
+
+  <!-- 9. Contact -->
+  <section>
+    <h2>9. Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy, contact us at:<br/>
+      <a href="mailto:your@email.com">0xsupports@gmail.com</a>
+    </p>
+  </section>
+
+  <div class="meta">
+    <p><strong>Counter — Track Anything</strong></p>
+    <p>Package name: com.countify.app</p>
+    <p>Last updated: April 26, 2026</p>
+  </div>
+
+</main>
+</body>
+</html>
